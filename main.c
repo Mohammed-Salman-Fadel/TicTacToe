@@ -1,9 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
+int func(int A[])
 {
-    printf("Hello world!\n");
-    answer = get_string("What is your name?");
-    return 0;
+    int size=sizeof(A)/sizeof(A[0]);
+    for(int i=0;i<5;i++)
+    {
+        printf("%d",A[i]);
+    }
 }
+
+int main(void)
+{
+    int A[]={1,2,3,4,5};
+    func(&A);
+}
+
